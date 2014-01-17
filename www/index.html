@@ -1,43 +1,69 @@
-<!DOCTYPE html>
-<!--
-    Licensed to the Apache Software Foundation (ASF) under one
-    or more contributor license agreements.  See the NOTICE file
-    distributed with this work for additional information
-    regarding copyright ownership.  The ASF licenses this file
-    to you under the Apache License, Version 2.0 (the
-    "License"); you may not use this file except in compliance
-    with the License.  You may obtain a copy of the License at
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-    Unless required by applicable law or agreed to in writing,
-    software distributed under the License is distributed on an
-    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-     KIND, either express or implied.  See the License for the
-    specific language governing permissions and limitations
-    under the License.
--->
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="format-detection" content="telephone=no" />
-        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
-        <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
-    </head>
-    <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
-        </div>
-        <script type="text/javascript" src="phonegap.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
-    </body>
+	<head>
+		<title>HTML 5 Tutorial</title>
+		<link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+		<link rel="stylesheet" href="stylesheets/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="stylesheets/app.css">
+		<link rel="shortcut icon" type="image/x-icon" href="images/logo_title.jpg">
+		<script type="text/javascript" src="scripts/jquery.js"></script>
+		<script type="text/javascript" src="scripts/bootstrap.js"></script>
+		<script type="text/javascript" src="scripts/app.js"></script>
+		<script type="text/javascript" src="scripts/quiz.js"></script>
+		<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+		<script type="text/javascript" src="scripts/jquery-mobile.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+	</head>
+	<body>
+		<div class="header navbar navbar-inverse navbar-fixed-top">
+				<div class = "col-xs-12">	
+					<div class="nav">
+						<div id="home" class="navButton"> </div>
+						<div id="htmltags" class="navButton"> </div>
+						<div id="history" class="navButton"> </div>
+						<div id="quiz" class="navButton"> </div>
+						<div id="usericon" class="navButton" href = "#register" role = "button" data-toggle = "modal"> </div>
+						<div id="WelcomeM"> </div>
+						<div id="LogOut"><a id="Out"></a></div>
+					</div>	<!-- end of nav div -->
+				</div> <!-- end of col-xs div -->	
+			</div> <!-- end of header div -->
+
+		<div class="container">
+		
+			<div class="con">
+				
+				<div class="logo"><img id = "logo" src="images/htmllogo.png" alt=""></div>	
+
+				<div class="content">
+					<p>Hello! Welcome to HTML5 Tutorials! Please use the navigation pane or the <span>ICONS</span> above to navigate through pages!</p>
+				</div> <!-- end of content div -->
+
+				<div class="clearfix"></div>
+			</div> <!-- end of con div -->
+
+		</div> <!-- end of container div -->
+		<div id = "register" class="modal fade" aria-hidden = "true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<h3>Personal Info!</h3>
+					</div> <!-- end of modal-header div -->
+
+					<div class="modal-body">
+						<form action="">
+							<label for="">Nickname: </label><input id = "uname" type="text">
+						</form>
+					</div> <!-- end of modal-body div -->
+			
+
+					<div class="modal-footer">
+						<button id="regBut" class = "btn btn-success">Go!</button>
+
+					</div> <!-- end of modal-footer div -->
+				</div> <!-- end of modal-content div -->
+			</div> <!-- end of modal-dialog div -->
+		</div> <!-- end of register div -->
+
+	</body>
 </html>
